@@ -12,10 +12,10 @@ var maxDrops=100;
 var thunderCreatedFrame=0;
 
 function preload(){
-    thunder1 = loadImage("thunderbolt/1.png");
-    thunder2 = loadImage("thunderbolt/2.png");
-    thunder3 = loadImage("thunderbolt/3.png");
-    thunder4 = loadImage("thunderbolt/4.png");
+    thunder1 = loadImage("1.png");
+    thunder2 = loadImage("2.png");
+    thunder3 = loadImage("3.png");
+    thunder4 = loadImage("4.png");
 }
 
 function setup(){
@@ -29,7 +29,7 @@ function setup(){
     if(frameCount % 150 === 0){
 
         for(var i=0; i<maxDrops; i++){
-            Drops.push(new createDrop(random(0,400), random(0,400)));
+            Drops.push(new drop(random(0,400), random(0,400)));
         }
 
     }
